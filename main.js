@@ -95,6 +95,7 @@ function getJoke() {
     .then(function(data) {
       let jokeDiv = document.createElement("div");
       jokeDiv.innerText = data.joke;
+      jokeDiv.classList.add("carddeck");
       document.body.appendChild(jokeDiv);
     });
 }

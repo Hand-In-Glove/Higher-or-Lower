@@ -1,6 +1,73 @@
+body {
+  background: #ffffff;
+  background: -webkit-radial-gradient(center, #ffffff, #eed2aa);
+  background: -moz-radial-gradient(center, #ffffff, #eed2aa);
+  background: radial-gradient(ellipse at center, #ffffff, #eed2aa);
+}
+
+h1 {
+  text-align: center;
+}
+
 #card-box {
   height: 400px;
   width: 350px;
   background-color: darkolivegreen;
   border: 2px solid grey;
+  justify-content: center;
+  align-items: center;
+  font-size: 9rem;
+}
+
+button {
+  box-shadow: inset 0px 0px 30px 0px #cf866c;
+  background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+  background-color: #d0451b;
+  border-radius: 42px;
+  border: 12px solid #942911;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Georgia;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 25px 50px;
+  text-decoration: none;
+  text-shadow: 0px 3px 8px #854629;
+  margin: 50px;
+}
+button:hover {
+  background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+  background-color: #bc3315;
+}
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.carddeck {
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+  position: relative;
+  margin: 30px;
+  background: #6dbdbc;
+  background: -webkit-linear-gradient(top right, #6dbdbc, #473578);
+  background: -moz-linear-gradient(top right, #6dbdbc, #473578);
+  background: linear-gradient(to bottom left, #6dbdbc, #473578);
+  -webkit-box-shadow: 12px 10px 22px 3px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 12px 10px 22px 3px rgba(0, 0, 0, 0.9);
+  box-shadow: 12px 10px 22px 3px rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+#result-box {
+  font-size: 2rem;
+}
+
+.container {
+  position: relative;
+  display: flex; /* or inline-flex */
+  justify-content: center;
+  align-items: flex-end;
 }
